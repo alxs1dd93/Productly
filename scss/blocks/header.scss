@@ -31,6 +31,12 @@
         color: #173A56;    
     }
 
+    &__reg-in:hover {
+        color: #fff;  
+        background-color: #FF9900;
+        transform: scale(1.2)
+    }
+
     &__reg-up {
         padding: 11px 22px;
         font-weight: 600;
@@ -44,6 +50,13 @@
         line-height: 24px;  
         color: #fff;        
     }
+
+    &__reg-up:hover {
+        color: #173A56;  
+        background-color: #fff;
+        border: 1px solid #173A56;
+        transform: scale(1.2)
+    }
 }
 .menu {
     &__list {
@@ -51,6 +64,17 @@
         max-width: 350px;
         margin-right: 29px;
         margin-top: 24px;
+    }
+    &__list a {
+        text-decoration: none;
+        color: #2F281E;
+    }
+    &__list a:hover {
+        border-bottom: 2px solid #2F281E;
+        padding-bottom: 3px;
+        color: #FF9900;
+        font-size: 22px;
+        line-height: 32px
     }
     &__item {
         margin-right: 24px;
