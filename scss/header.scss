@@ -1,0 +1,57 @@
+.logo {
+    width: 187px;
+    height: 32px;
+}
+
+.header {
+    &__top{
+      display: flex;  
+    }
+    &__logo {
+        margin-right: 320px;
+        margin-top: 22px;
+    }
+    &__reg {
+        margin-top: 15px;
+        display: flex;
+    }
+    &__reg-in {
+        margin-right: 14px;
+
+        padding: 11px 22px;
+        font-weight: 600;
+        width: 102px;
+        height: 46px;
+        border: 1px solid #BCD0E5;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;  
+        color: #173A56;    
+    }
+
+    &__reg-up {
+        padding: 11px 22px;
+        font-weight: 600;
+        width: 102px;
+        height: 46px;
+        border-radius: 4px;
+        border: 1px solid #FF9900;
+        cursor: pointer;
+        background-color: #FF9900;
+        font-size: 16px;
+        line-height: 24px;  
+        color: #fff;        
+    }
+}
+.menu {
+    &__list {
+        display: flex;
+        max-width: 350px;
+        margin-right: 29px;
+        margin-top: 24px;
+    }
+    &__item {
+        margin-right: 24px;
+    }
+}
