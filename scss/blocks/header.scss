@@ -4,6 +4,7 @@
 }
 
 .header {
+    margin-bottom: 50px;
     &__top{
       display: flex;  
       margin-bottom: 50px;
@@ -181,7 +182,7 @@
     }
 }
 
-    @media (max-width: 760px) {
+    @media (max-width: 780px) {
     .header {
     &__top {
         display: flex;

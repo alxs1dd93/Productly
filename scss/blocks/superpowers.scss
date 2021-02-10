@@ -94,7 +94,7 @@
         }
     }
 
-    @media (max-width: 890px) {
+    @media (max-width: 910px) {
         .superpowers {
             &__inner {
         display: flex;
@@ -156,8 +156,34 @@
 
     @media (max-width: 390px) {
         .superpowers {
+            &__info {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            &__started {
+                margin-left: 0;
+            }
+
+            &__img img {
+                max-width: 260px;
+                max-height: 290px;
+               }
             &__img img {
             display: none;
                }
+               &__btn-orange {
+              margin: 0;
+              margin-bottom: 40px;
+            }
+               &__btn-white {
+                   margin: 0;
+                   padding: 0;
+                background-image: none;
+                border-bottom: 1px solid #FF9900;
+                
+            }
+               &__btn-white::before {
+                background-image: none;
+            }
         }
     }
