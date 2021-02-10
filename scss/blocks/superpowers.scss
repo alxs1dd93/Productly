@@ -1,4 +1,5 @@
 .superpowers {
+    margin-top: 200px;// vremenno
     margin-bottom: 111px;
     &__inner {
         display: flex;
@@ -71,3 +72,93 @@
     }
 }
 
+    @media (max-width: 1100px) {
+        .superpowers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__started {
+                display: flex;
+                flex-direction: column;
+            }
+           &__btn-orange {
+               margin-bottom: 40px;
+           }
+           &__btn-white {
+               margin-left: 22px;
+            border-bottom: none;
+           }
+           &__img img {
+            max-width: 576px;
+            max-height: 451px
+           }
+        }
+    }
+
+    @media (max-width: 890px) {
+        .superpowers {
+            &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+            }
+            &__started {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            &__btn-white {
+             margin-left: -19px;
+             border-bottom: none;
+             margin-bottom: 20px;
+            }
+        }
+    }
+
+
+
+    @media (max-width: 600px) {
+        .superpowers {
+          
+            &__title {
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 15px;
+            }
+            &__text {
+                font-size: 15px;
+                line-height: 25px;
+            } 
+            &__img img {
+                max-width: 380px;
+                max-height: 360px;
+               }
+        }
+    }
+
+    @media (max-width: 445px) {
+        .superpowers {
+            &__info {
+                margin-left: 20px;
+            }
+            &__started {
+                margin-left: 30px;
+            }
+
+            &__img img {
+                max-width: 260px;
+                max-height: 290px;
+               }
+        }
+    }
+
+    @media (max-width: 390px) {
+        .superpowers {
+            &__img img {
+            display: none;
+               }
+        }
+    }
