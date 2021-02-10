@@ -1,0 +1,173 @@
+.marketing {
+    // margin-top: 500px;
+    margin-bottom: 102px;
+    &__title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 51px;
+        color: #2F281E;
+        margin-bottom: 9px;
+    }
+    &__text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #544837;
+        margin-bottom: 55px;
+    }
+// SLIDER
+
+    .slider {
+        min-width: 1095px;
+        // padding: 0 50px; padding для слайдера, временно
+        position: relative;// для  позиционирования slick-arrow
+
+        &__item {
+            margin-right: 43px;
+            // margin: 0 auto; центровка 1 слайдера
+        } 
+       
+        // min-width: 0; если слайдер является потомком или флекс-элементом
+        .slick-track{
+            display: flex;
+            align-items: flex-start; //для адаптивной высоты
+        }
+        .slick-list {
+            overflow: hidden; // чтобы не попадало лишнее
+        }
+        .slick-arrow{
+          position: absolute;
+          margin: -30px 0 0 0; // половина высоты = центрирую стрелки
+          top: 50%;
+          z-index: 10;
+          width: 40px; // размер стрелок
+          height: 60px; // размер стрелок
+        }
+        .slick-arrow.slick-prev{
+        left:0;
+        font-size: 0;//убираем записин на кнопках
+        background: url('../../images/arrow-prev.svg') 0 0 / 100% no-repeat;//ставим стрелочки на слайдер
+        }
+        .slick-arrow.slick-next{
+        right: 0;
+        font-size: 0;//убираем записин на кнопках
+        background: url('../../images/arrow-next.svg') 0 0 / 100% no-repeat;//ставим стрелочки на слайдер
+        }
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slick-dots li{
+            list-style: none;
+        }
+        /* Активная точка */
+        .slick-dots li.slick-active button{
+            border: 1px solid #EFEFEF;
+            background-color: #FF9900;// изменяем цвет акивной кнопки
+        }
+        /* Элемент точки */
+        .slick-dots li button{
+            font-size: 0; // убираем цифры
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #EFEFEF;
+            border: 1px solid #EFEFEF;
+            //сделали круглые дотсы
+        }
+
+        .slider__item img {
+            margin-bottom: 25px;
+            }
+            .slider__item-data {
+            margin-bottom: 12px;
+    
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: #544837;
+            }
+    
+            .slider__item-text {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 34px;
+            color: #2F281E;
+            }
+
+            .slider__item-text--yellow {
+                color: #FF9900;
+            }
+
+
+        // .slick-arrow .slick-disabled {
+        //     opacity: 0.2;
+        // } для конечного слайдера со стрелками
+        // 
+        // @media (max-width: 1240px) {
+        // .slider {
+        //     min-width: 800px;
+        //     .slick-track{
+        //         display: flex;
+        //         align-items: flex-start; //для адаптивной высоты
+        //     }
+        // }
+
+   
+        }
+
+    
+
+
+    
+
+
+
+
+        // Слайдер 
+    // .slick-slider{}
+    // /* Слайдер запущен */
+    // .slick-slider.slick-initialized{}
+    // /* Слайдер с точками */
+    // .slick-slider.slick-dotted{}
+    // /* Ограничивающая оболочка */
+    // .slick-list {}
+    // /* Лента слайдов */
+    // .slick-track{}
+    // /* Слайд */
+    // .slick-slide{}
+    // /* Слайд активный (показывается) */
+    // .slick-slide.slick-active{}
+    // /* Слайд основной */
+    // .slick-slide.slick-current{}
+    // /* Слайд по центру */
+    // .slick-slide.slick-center{}
+    // /* Клонированный слайд */
+    // .slick-slide.slick-cloned{}
+    // /* Стрелка */
+    // .slick-arrow{}
+    // /* Стрелка влево */
+    // .slick-arrow.slick-prev{}
+    // /* Стрелка вправо */
+    // .slick-arrow.slick-next{}
+    // /* Стрелка не активная */
+    // .slick-arrow.slick-disabled{}
+    // /* Точки (булиты) */
+    // .slick-dots{}
+    // .slick-dots li{}
+    // /* Активная точка */
+    // .slick-dots li.slick-active{}
+    // /* Элемент точки */
+    // .slick-dots li button{}
+}
+
