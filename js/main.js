@@ -58,4 +58,63 @@ $(document).ready(function(){
         
 
     });
-  });
+});
+  
+
+
+//burger
+
+const burgerTrigger = document.querySelector('.menu__btn'); // кнопка для нажатия
+const burger = document.querySelector('.modal'); // modalka
+const burgerCloseBtn = document.querySelector('[data-close]');
+console.log(burgerTrigger);
+console.log(burger);
+
+// burgerTrigger.addEventListener('click', () => {
+//     burger.classList.add('show');
+//     burger.classList.remove('hide');
+// });
+
+
+function closeModal() {
+    burger.classList.add('hide');
+    burger.classList.remove('show');
+    document.body.style.overflow = '';
+}
+
+function openModal() {
+    burger.classList.add('show');
+    burger.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+}
+
+burgerTrigger.addEventListener('click', openModal);
+burgerCloseBtn.addEventListener('click', closeModal);
+
+
+
+
+
+
+
+
+
+
+
+
+// function openBurger() { 
+//     burger.classList.add('show');
+//     burger.classList.remove('hide');
+//     document.body.style.overflow = 'hidden'; 
+// }
+// // openBurger();
+
+// function closeBurger() {
+//     burger.classList.add('hide');
+//     burger.classList.remove('show');
+   
+//     document.body.style.overflow = '';
+// }
+// // closeBurger();
+
+// burger.addEventListener('click', openBurger);
