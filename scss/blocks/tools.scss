@@ -1,76 +1,151 @@
 .tools {
-        background-image: url("../../images/tools-bg.png");
-        min-height: 620px;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-size: cover;
-        margin-bottom: 200px;
+    margin-top: 200px;
+    background-image: url("../../images/tools-bg.png");
+    min-height: 620px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    margin-bottom: 200px;
 
+&__title {
+    margin-bottom: 54px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+}
+
+
+
+&__list {
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+&__item {
+    max-width: 220px;
+}
+
+&__item img {
+    margin-bottom: 30px;
+}
+
+&__item-title {
+    margin-bottom: 13px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+&__item-text {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    max-width: 182px;
+}
+&__btn-center {
+    display: flex;
+    justify-content: center;
+}
+&__btn {
+    display: inline-block;
+    margin: 0 auto;
+
+    padding: 15px 32px;
+    font-weight: 700;
+    width: 175px;
+    height: 53px;
+    border-radius: 4px;
+    border: 1px solid #FF9900;
+    cursor: pointer;
+    background-color: #FF9900;
+    font-size: 16px;
+    line-height: 24px;  
+    color: #fff;  
+    }
+}
+
+@media (max-width: 780px){
+    .tools {
+  
     &__title {
-        margin-bottom: 54px;
-
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 54px;
-        text-align: center;
+        margin-bottom: 65px;
+        font-size: 39px;
+        line-height: 57px;
     }
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
+    &__item {
+        min-width: 290px;
+        margin-bottom: 30px;
     }
-
-    &__list {
-        display: flex;
-        margin-bottom: 60px;
-        justify-content: space-between;
+    &__item-1 {
+        padding-left: 50px;
+    }
+    &__item-3 {
+        padding-left: 50px;
     }
     
-    &__item {
-        max-width: 220px;
-    }
-
     &__item img {
         margin-bottom: 30px;
     }
-
-    &__item-title {
-        margin-bottom: 13px;
-
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-    }
-
-    &__text {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-
-        max-width: 182px;
-    }
-
+    
     &__btn {
-        display: inline-block;
-        margin: 0 auto;
+      
+        margin-bottom: 40px;
+        }
+    }
+}
 
-        padding: 15px 32px;
-        font-weight: 700;
-        width: 175px;
-        height: 53px;
-        border-radius: 4px;
-        border: 1px solid #FF9900;
-        cursor: pointer;
-        background-color: #FF9900;
-        font-size: 16px;
-        line-height: 24px;  
-        color: #fff;  
-
+@media (max-width: 630px){
+    .tools {
+  
+    &__title {
+        margin-bottom: 65px;
+        font-size: 41px;
+        line-height: 60px;
+    }
+    &__item-title {
+        font-size: 28px;
+        line-height: 34px;
+        text-align: center;
+    }
+    
+    &__item-text {
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 220px;
+        text-align: center;
+        padding: 0;
+    }
+    &__item {
+        min-width: 290px;
+        margin-bottom: 30px;
+        margin: 0 auto 40px;
+    }
+    &__item-1 {
+        padding-left: 0;
+    }
+    &__item-3 {
+        padding-left: 0;
+    }
+    
+    &__item img {
+        margin-bottom: 30px;
+        padding-left: 64px;
+    }
+    
+    &__btn {
+        margin-bottom: 40px;
+        }
     }
 }
