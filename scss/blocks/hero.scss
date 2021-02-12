@@ -19,7 +19,7 @@
         text-align: center;
         color: #2F281E;
         margin-bottom: 22px;
-        min-width: 354px;
+        max-width: 354px;
     }
     &__column-text {
         font-family: Poppins;
@@ -30,7 +30,7 @@
         text-align: center;
         color: #567592;
         margin-bottom: 45px;
-        min-width: 542px;
+        max-width: 542px;
     }
     &__column-btn {
         display: inline-block;
@@ -67,3 +67,93 @@
     }
 
 }
+
+@media (max-width: 1340px) {
+    .hero {
+        &__column-image-4 {
+            margin-bottom: 184px;
+            margin-left: -227px;
+        }
+        &__column-image-3 {
+            margin-bottom: 91px;
+            margin-left: -57px;
+        }
+        &__column-image-5 {
+            margin-top: 57px;
+            margin-left: 30px;
+        }
+        &__column-image-1 {
+        margin-bottom: 142px;
+        margin-top: 55px;
+        }
+    }
+}
+
+// @media (max-width: 1115px) {
+// .hero {
+    
+//     &__column-one {
+//         display: none;
+//     }
+//     &__column-three {
+//         display: none;
+//     }
+//     &__column-two {
+
+//     }
+// }
+// }
+
+@media (max-width: 1115px) {
+.hero {
+        &__inner {
+            display: block;
+        }
+        &__column-one {
+            display: none;
+        }
+        &__column-three {
+            display: none;
+        }
+        &__column-text {
+            font-size: 26px;
+            line-height: 39px;
+            text-align: center;
+            color: #567592;
+            margin-bottom: 55px;
+            max-width: 542px;
+        }
+        &__column-btn {
+            margin-bottom: 65px;
+        }
+    }       
+}
+
+@media (max-width: 500px) {
+    .hero {
+            &__inner {
+                display: block;
+            }
+           
+            &__column-text {
+                
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: #567592;
+                margin-bottom: 55px;
+                
+            }
+            &__column-btn {
+                margin-bottom: 65px;
+            }
+        }       
+    }
+
+    @media (max-width: 390px) {
+        .hero {
+               &__column-image-2 {
+                   max-width: 300px;
+               }
+            }       
+        }

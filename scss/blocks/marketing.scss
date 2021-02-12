@@ -191,3 +191,10 @@
         }  
     }
 }
+
+@media (max-width: 360px) {
+    .marketing .slider .slider__item img {
+        margin-bottom: 25px;
+        max-width: 245px;
+    }
+}

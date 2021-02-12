@@ -69,7 +69,8 @@ console.log(burgerTrigger);
 console.log(burger);
 
 burgerTrigger.addEventListener('click', () => {
-    burger.classList.add('show');
+  console.log('click');
+  burger.classList.add('show');
     burger.classList.remove('hide');
 });
 
@@ -86,7 +87,7 @@ function openModal() {
     document.body.style.overflow = 'hidden';
 }
 
-// burgerTrigger.addEventListener('click', openModal);
+burgerTrigger.addEventListener('click', openModal);
 if (burgerCloseBtn) {
     burgerCloseBtn.addEventListener('click', closeModal);
 }

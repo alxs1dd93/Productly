@@ -1,4 +1,5 @@
 .team {
+    margin-top: 200px;
     margin-bottom: 160px; 
     &__design {
         display: flex;
@@ -83,4 +84,61 @@
         top: 0px;
     }
 }
- 
+@media (max-width: 1024px){
+   .team {
+    &__design {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    &__design-info {
+        max-width: 480px;
+        margin-bottom: 35px;
+    }
+    &__design-title {
+        font-size: 28px;
+        line-height: 44px;
+    }
+    &__design-text {
+        font-size: 14px;
+        line-height: 24px;  
+    }
+
+    &__design-text--bold {
+        margin-bottom: 12px;
+    }
+    &__design-img {
+        max-width: 420px;
+    }
+    &__managers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    &__managers-info {
+        margin-bottom: 35px;
+        margin-left: 0;
+    }
+    &__managers-title {
+        font-size: 28px;
+        line-height: 44px;
+    }
+    &__managers-text {
+        font-size: 14px;
+        line-height: 24px; 
+    }
+    &__managers-item--one {
+        max-width: 320px;
+    }
+   }
+}
+
+@media (max-width: 470px) {
+.team {
+    &__design-img {
+        max-width: 280px;
+    } 
+}
+}

@@ -242,12 +242,12 @@
             flex-direction: column;
         }
 
-        //   .show {
-        //     display: block;
-        //   }
-        //   .hide {
-        //     display: none;
-        //   }
+          .show {
+            display: block;
+          }
+          .hide {
+            display: none;
+          }
           .fade {
             animation-name: fade;
             animation-duration: 1.5s;
