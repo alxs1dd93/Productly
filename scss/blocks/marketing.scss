@@ -1,4 +1,5 @@
 .marketing {
+    margin-top: 200px;//!! временно 
     // margin-top: 500px;
     margin-bottom: 102px;
     &__title {
@@ -22,7 +23,7 @@
 // SLIDER
 
     .slider {
-        min-width: 1095px;
+        max-width: 1065px;
         // padding: 0 50px; padding для слайдера, временно
         position: relative;// для  позиционирования slick-arrow
 
@@ -31,8 +32,9 @@
             // margin: 0 auto; центровка 1 слайдера
         } 
        
-        // min-width: 0; если слайдер является потомком или флекс-элементом
+        
         .slick-track{
+            // min-width: 0; если слайдер является потомком или флекс-элементом
             display: flex;
             align-items: flex-start; //для адаптивной высоты
         }
@@ -81,9 +83,11 @@
             border: 1px solid #EFEFEF;
             //сделали круглые дотсы
         }
+       
 
         .slider__item img {
             margin-bottom: 25px;
+            max-width: 295px;//!!временно?)
             }
             .slider__item-data {
             margin-bottom: 12px;
@@ -171,3 +175,19 @@
     // .slick-dots li button{}
 }
 
+@media (max-width: 768px) {
+    .slider {
+        max-width: 768px;
+        
+        position: relative;// для  позиционирования slick-arrow
+
+        &__item {
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }  
+    }
+}

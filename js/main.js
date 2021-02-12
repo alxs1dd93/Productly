@@ -12,11 +12,11 @@ $(document).ready(function(){
         //сколько слайдов прокручивать за раз
         slidesToScroll: 3,
         // скорость перелистывания
-        speed: 500,
+        speed: 500,        
         // анимация
         // easing: 'linear',
         // конечность слайдера true/false
-        // infinite: true,
+        //infinite: false,
         // стартовый слайдер
         // initialSlide: 0,
         // автоплей
@@ -32,34 +32,32 @@ $(document).ready(function(){
         //ждать ли анимацию
         waitForAnimate: false,
         // центровка слайда 31:13
-        centerMode: false,
-        variableWidth: false,
+        centerMode: false,        
         //ряды
         rows: 1,
         //вертикальный вариант
         // vertical: true,
         //АДАПТИВ слайдера
-        // responsive: [
-        //     {
-        //         breakpoint: 950,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1,
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 930,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1,
-        //         }
-        //     }
-        // ]
-        
+        responsive: [
+            {
+              breakpoint: 950,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }            
+          ]      
 
-    });
+    });    
 });
-  
+
 
 
 //burger
@@ -70,10 +68,10 @@ const burgerCloseBtn = document.querySelector('[data-close]');
 console.log(burgerTrigger);
 console.log(burger);
 
-// burgerTrigger.addEventListener('click', () => {
-//     burger.classList.add('show');
-//     burger.classList.remove('hide');
-// });
+burgerTrigger.addEventListener('click', () => {
+    burger.classList.add('show');
+    burger.classList.remove('hide');
+});
 
 
 function closeModal() {
@@ -88,8 +86,10 @@ function openModal() {
     document.body.style.overflow = 'hidden';
 }
 
-burgerTrigger.addEventListener('click', openModal);
-burgerCloseBtn.addEventListener('click', closeModal);
+// burgerTrigger.addEventListener('click', openModal);
+if (burgerCloseBtn) {
+    burgerCloseBtn.addEventListener('click', closeModal);
+}
 
 
 
